@@ -59,4 +59,16 @@ const explorers = [
     }
    ]
 
-   explorers.forEach((n) => console.log(n.name + ' stack ► ' + n.stack))
+explorers.forEach((n) => console.log(n.name + ' stack ► ' + n.stack))
+
+const listStacks =explorers.map((list) => list.stack)
+console.log('Nueva lista de stacks : ' + listStacks)
+
+const stacksJS = explorers.filter((sta) => sta.stack.includes('js'))
+console.log(stacksJS)
+
+const city = explorers.find((c) => c = 'CDMX')
+console.log(city)
+
+const exercises_R = explorers.exercises_completed.reduce((acc, elemet) => acc + elemet , 0)
+console.log('La suma de los ejercicios resueltos es: ' + exercises_R)
