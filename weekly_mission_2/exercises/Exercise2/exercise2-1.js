@@ -70,5 +70,11 @@ console.log(stacksJS)
 const city = explorers.find((c) => c = 'CDMX')
 console.log(city)
 
-const exercises_R = explorers.exercises_completed.reduce((acc, elemet) => acc + elemet , 0)
-console.log('La suma de los ejercicios resueltos es: ' + exercises_R)
+// const exercises_R = explorers.exercises_completed.reduce((acc, elemet) => acc + elemet , 0)
+// console.log('La suma de los ejercicios resueltos es: ' + exercises_R)
+
+const finisehd = explorers.some((f) => f === true)
+console.log('Validacion de exercisesFinished : ' + finisehd)
+
+const is = explorers.every((isF) => isF === true)
+console.log('Validacion de isfinished : ' + is)
